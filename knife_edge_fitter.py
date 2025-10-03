@@ -6,6 +6,7 @@ from scipy.special import erf
 from math import floor, log10
 
 
+# Test test commit
 def beam(x, x0, w, amp, offset):
     Phi = lambda x: 1 / 2 * (1 + erf(x))
     return amp * Phi(np.sqrt(2) * (x - x0) / w) + offset
