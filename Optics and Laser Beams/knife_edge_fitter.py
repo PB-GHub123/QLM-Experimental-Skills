@@ -20,7 +20,7 @@ def gaussian(x, x0, w):
 x = "distance (mm)"
 y = "voltage (V)"
 
-for trace in ["test_knife_edge"]:
+for trace in ["knife_edge_data"]:
     df = pd.read_csv(trace + ".csv")
     plt.scatter(df[x], df[y])
     popt, pcov = curve_fit(beam, df[x], df[y], p0=(5, 1, 15, 0))

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gaussianBeam>
+<gaussianBeam version="1.1">
+    <bench id="0">
+        <wavelength>5.2e-07</wavelength>
+        <leftBoundary>-0.1</leftBoundary>
+        <rightBoundary>0.7</rightBoundary>
+        <targetBeam id="0">
+            <position>0.0362656</position>
+            <waist>4.14e-06</waist>
+            <positionTolerance>0.1</positionTolerance>
+            <waistTolerance>0.05</waistTolerance>
+            <minOverlap>0.98</minOverlap>
+            <overlapCriterion>0</overlapCriterion>
+        </targetBeam>
+        <beamFit id="0">
+            <name>Fit0</name>
+            <dataType>0</dataType>
+            <color>0</color>
+            <data id="0">
+                <position>0.025</position>
+                <value>0.00016</value>
+            </data>
+            <data id="1">
+                <position>0.03</position>
+                <value>8.9e-05</value>
+            </data>
+            <data id="2">
+                <position>0.035</position>
+                <value>1.4e-05</value>
+            </data>
+            <data id="3">
+                <position>0.04</position>
+                <value>8.2e-05</value>
+            </data>
+            <data id="4">
+                <position>0.05</position>
+                <value>0.00033</value>
+            </data>
+            <data id="5">
+                <position>0.06</position>
+                <value>0.00045</value>
+            </data>
+            <data id="6">
+                <position>0.07</position>
+                <value>0.00063</value>
+            </data>
+            <data id="7">
+                <position>0.08</position>
+                <value>0.00089</value>
+            </data>
+            <data id="8">
+                <position>0.1</position>
+                <value>0.0039</value>
+            </data>
+        </beamFit>
+        <opticsList>
+            <inputBeam id="2">
+                <waist>4.13771e-06</waist>
+                <index>1</index>
+                <M2>1</M2>
+                <position>0.0362656</position>
+                <name>w0</name>
+                <absoluteLock>1</absoluteLock>
+            </inputBeam>
+        </opticsList>
+    </bench>
+    <view id="0" bench="0">
+        <horizontalRange>0.3</horizontalRange>
+        <verticalRange>0.008</verticalRange>
+        <origin>-0.059894</origin>
+        <showTargetBeam id="0">0</showTargetBeam>
+    </view>
+</gaussianBeam>
