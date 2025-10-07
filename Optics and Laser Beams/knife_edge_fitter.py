@@ -25,7 +25,7 @@ header = "knife edge fit"
 
 df = pd.read_csv(file)
 plt.scatter(df[x], df[y])
-popt, pcov = curve_fit(beam, df[x], df[y], p0=(5, 1, 15, 0))
+popt, pcov = curve_fit(beam, df[x], df[y], p0=(15, 1, 15, 0))
 perr = np.sqrt(np.diag(pcov))
 xfit = np.linspace(min(df[x]), max(df[x]), 1000)
 plt.plot(xfit, beam(xfit, *popt), c="C1")
