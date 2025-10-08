@@ -426,7 +426,7 @@ class profile:
             #plt.show()
             plt.savefig(filename_global+'_plot'+'.png')
 
-filename_global = "100"
+filename_global = "500"
 
 if __name__ == "__main__":
 
