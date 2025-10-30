@@ -2,7 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
 
-spectrum = pd.read_csv("./QLM-Experimental-Skills/Rb Spectroscopy/personal/sub doppler averaging.csv")
+spectrum = pd.read_csv("./Rb Spectroscopy/personal/sub doppler averaging.csv")
 spectrum = spectrum.values[1:].astype(float)
 
 plt.figure(1)
