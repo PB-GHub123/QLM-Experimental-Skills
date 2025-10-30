@@ -1,9 +1,12 @@
 import numpy as np
 from matplotlib import pyplot as plt
+import pandas as pd
 
-spectrum = np.loadtxt('capture_3_michael.csv',delimiter = ',',dtype='float', skiprows=2)
-spectrum.transpose()
+spectrum = pd.read_csv("./QLM-Experimental-Skills/Rb Spectroscopy/personal/sub doppler averaging.csv")
+spectrum = spectrum.values[1:].astype(float)
 
 plt.figure(1)
-plt.plot(np.arange(spectrum.shape[0]), spectrum[:,1])
+plt.scatter(spectrum[:,0], spectrum[:,1], s=5)
+plt.figure(2)
+plt.scatter(spectrum[:,0], spectrum[:,2], s=5)
 plt.show()
